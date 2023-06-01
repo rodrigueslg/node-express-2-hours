@@ -1,14 +1,10 @@
-# Get all contacts
+### Get all contacts
 GET http://localhost:5001/api/contacts
 
-###
+### Get contact for ID
+GET http://localhost:5001/api/contacts/6478e8ff59ee51f92fe5a150
 
-# Get contact for ID
-GET http://localhost:5001/api/contacts/1
-
-###
-
-# Create contact
+### Create contact
 POST http://localhost:5001/api/contacts
 Content-Type: application/json
 
@@ -18,12 +14,15 @@ Content-Type: application/json
   "phone": "31984201068"
 }
 
-###
+### Update contact for ID
+PUT http://localhost:5001/api/contacts/6478e8ff59ee51f92fe5a150
+Content-Type: application/json
 
-# Update contact for ID
-PUT http://localhost:5001/api/contacts/2
+{
+  "name": "luis rodrigues up",
+  "email": "luis.rodrigues.up@email.com",
+  "phone": "31984201068"
+}
 
-###
-
-# Delete contact for ID
-DELETE http://localhost:5001/api/contacts/3
+### Delete contact for ID
+DELETE http://localhost:5001/api/contacts/6478e8ff59ee51f92fe5a150

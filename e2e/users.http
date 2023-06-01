@@ -1,0 +1,22 @@
+### Register user
+POST http://localhost:5001/api/users/register
+Content-Type: application/json
+
+{
+  "username": "luis.rodrigues",
+  "email": "luis.rodrigues@email.com",
+  "password": "123456"
+}
+
+### Login user
+POST http://localhost:5001/api/users/login
+Content-Type: application/json
+
+{
+  "email": "luis.rodrigues@email.com",
+  "password": "123456"
+}
+
+### Current user
+GET http://localhost:5001/api/users/current
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoibHVpcy5yb2RyaWd1ZXMiLCJlbWFpbCI6Imx1aXMucm9kcmlndWVzQGVtYWlsLmNvbSIsImlkIjoiNjQ3OGY4NTY3NTVjNjJmZDU4MTQzYzVlIn0sImlhdCI6MTY4NTY1MTAyOCwiZXhwIjoxNjg1NjUxMDg4fQ.mshRfS7jYPiAtMagEjAeJcWJBn3we-36pfTO9yB-aqY

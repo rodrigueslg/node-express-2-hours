@@ -1,28 +1,32 @@
 ### Get all contacts
 GET http://localhost:5001/api/contacts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoibHVpcy5yb2RyaWd1ZXMiLCJlbWFpbCI6Imx1aXMucm9kcmlndWVzQGVtYWlsLmNvbSIsImlkIjoiNjQ3OGY4NTY3NTVjNjJmZDU4MTQzYzVlIn0sImlhdCI6MTY4NTcwNzU5MSwiZXhwIjoxNjg1NzA4NDkxfQ.QxGAnLuemutqmJk7D7FnRJD6qmDLfJAf2mi4no6XCww
 
 ### Get contact for ID
 GET http://localhost:5001/api/contacts/6478e8ff59ee51f92fe5a150
 
 ### Create contact
 POST http://localhost:5001/api/contacts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoibHVpcy5yb2RyaWd1ZXMiLCJlbWFpbCI6Imx1aXMucm9kcmlndWVzQGVtYWlsLmNvbSIsImlkIjoiNjQ3OGY4NTY3NTVjNjJmZDU4MTQzYzVlIn0sImlhdCI6MTY4NTcwNzU5MSwiZXhwIjoxNjg1NzA4NDkxfQ.QxGAnLuemutqmJk7D7FnRJD6qmDLfJAf2mi4no6XCww
 Content-Type: application/json
 
 {
-  "name": "luis rodrigues",
-  "email": "luis.rodrigues@email.com",
-  "phone": "31984201068"
+  "name": "luis rodrigues 4",
+  "email": "luis.rodrigues4@email.com",
+  "phone": "31999999999"
 }
 
 ### Update contact for ID
-PUT http://localhost:5001/api/contacts/6478e8ff59ee51f92fe5a150
+PUT http://localhost:5001/api/contacts/6479dc686f9ee596ac4325ac
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoibHVpcy5yb2RyaWd1ZXMiLCJlbWFpbCI6Imx1aXMucm9kcmlndWVzQGVtYWlsLmNvbSIsImlkIjoiNjQ3OGY4NTY3NTVjNjJmZDU4MTQzYzVlIn0sImlhdCI6MTY4NTcwNzU5MSwiZXhwIjoxNjg1NzA4NDkxfQ.QxGAnLuemutqmJk7D7FnRJD6qmDLfJAf2mi4no6XCww
 Content-Type: application/json
 
 {
-  "name": "luis rodrigues up",
-  "email": "luis.rodrigues.up@email.com",
-  "phone": "31984201068"
+  "name": "luis rodrigues teste up auth",
+  "email": "luis.rodrigues.up.auth@email.com",
+  "phone": "319999999"
 }
 
 ### Delete contact for ID
-DELETE http://localhost:5001/api/contacts/6478e8ff59ee51f92fe5a150
+DELETE http://localhost:5001/api/contacts/6479db5303c1def89d41e6d8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoibHVpcy5yb2RyaWd1ZXMiLCJlbWFpbCI6Imx1aXMucm9kcmlndWVzQGVtYWlsLmNvbSIsImlkIjoiNjQ3OGY4NTY3NTVjNjJmZDU4MTQzYzVlIn0sImlhdCI6MTY4NTcwNzU5MSwiZXhwIjoxNjg1NzA4NDkxfQ.QxGAnLuemutqmJk7D7FnRJD6qmDLfJAf2mi4no6XCww
